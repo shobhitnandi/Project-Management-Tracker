@@ -1,0 +1,89 @@
+<mat-card class="example-card" style="text-align: center;">
+    <mat-card-header>
+        <mat-card-title style="font-size: larger;">{{labels.addProject}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <i class="material-icons" (click)="openProjectDialog(labels.add,{})" style=" font-size: 80px;
+        color: #1e88e5;">
+            add
+        </i>
+    </mat-card-content>
+</mat-card>
+<mat-card class="example-card" style="text-align: center;">
+    <mat-card-header>
+        <mat-card-title style="font-size: larger;">{{labels.addEmployee}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <i class="material-icons" (click)="openEmployeeDialog(labels.add,{})" style=" font-size: 80px;
+        color: #1e88e5;">
+            add
+        </i>
+    </mat-card-content>
+</mat-card>
+<mat-card class="example-card" style="text-align: center;">
+    <mat-card-header>
+        <mat-card-title style="font-size: larger;">{{labels.addManager}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <i class="material-icons" (click)="openManagerDialog(labels.add,{})" style=" font-size: 80px;
+        color: #1e88e5;">
+            add
+        </i>
+    </mat-card-content>
+</mat-card>
+<mat-card class="example-card" style="text-align: center;">
+    <mat-card-header>
+        <mat-card-title style="font-size: larger;">{{labels.assignProject}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <i class="material-icons" (click)="openAssignProjectDialog(labels.add,{})" style=" font-size: 80px;
+        color: #1e88e5;">
+            add
+        </i>
+    </mat-card-content>
+</mat-card>
+<mat-card class="example-card">
+    <mat-card-content>
+        <div class="box">
+            <i class="material-icons" style=" font-size: 80px;
+            color: darkslateblue;">
+            remove_red_eye
+            </i>
+            <h4 style="margin-left: 10px;"> {{labels.open}} <br><b style="margin-left: 50%;">{{openproject}}</b></h4>
+        </div>   
+    </mat-card-content>
+</mat-card>
+<mat-card class="example-card">
+    <mat-card-content>
+        <div class="box">
+            <i class="material-icons" style=" font-size: 80px;
+            color: darkgoldenrod;">
+                trending_up
+            </i>
+            <h4 style="margin-left: 10px;"> {{labels.inprogress}} <br><b style="margin-left: 50%;">{{inprogressproject}}</b></h4>
+        </div>        
+    </mat-card-content>
+</mat-card>
+<mat-card class="example-card">
+    <mat-card-content>
+        <div class="box">
+            <i class="material-icons" style=" font-size: 80px;
+            color: green;">
+            check
+            </i>
+            <h4 style="margin-left: 10px;"> {{labels.completed}} <br><b style="margin-left: 50%;">{{completedproject}}</b></h4>
+        </div>   
+    </mat-card-content>
+</mat-card>
+<mat-card class="example-card">
+    <mat-card-content>
+        <div class="box">
+            <i class="material-icons" style=" font-size: 80px;
+            color: red;">
+            warning
+            </i>
+            <h4 style="margin-left: 10px;"> {{labels.cancelled}} <br><b style="margin-left: 50%;">{{cancelledproject}}</b></h4>
+        </div>
+    </mat-card-content>
+</mat-card>
+  

@@ -1,0 +1,43 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+       <span>PMT</span>
+       <span fxFlex style="font-size: x-large;
+        box-sizing: border-box;
+        margin-left: 35%;">Project Management Tracker</span>
+       <span class="spacer"></span>
+       <!-- <a mat-button routerLinkActive="selected" routerLink="/register">Register</a>
+       <a mat-button routerLinkActive="selected" routerLink="/login">Login</a> -->
+    </mat-toolbar-row>
+ </mat-toolbar>
+ <div class="main-div">
+    <mat-card class="my-card">
+       <mat-card-header style="justify-content: center;">
+          <mat-card-title>Login Form</mat-card-title>
+       </mat-card-header>
+       <mat-card-content style="padding-bottom: 0px;">
+          <form name="form" (ngSubmit)="f.form.valid && signin()" #f="ngForm" novalidate class="my-form">
+             <mat-form-field class="full-width">
+               <mat-label>User Name</mat-label>
+               <input matInput placeholder="User name"  type="text" name="username" 
+               [(ngModel)]="login.username" #username="ngModel"
+               [ngClass]="{ 'is-invalid': f.submitted && username.invalid }" required>
+             </mat-form-field>
+             <mat-form-field class="full-width">
+               <mat-label>Password</mat-label>
+               <input matInput placeholder="Enter Password" type="password" name="password"
+               [(ngModel)]="login.password" #password="ngModel"
+               [ngClass]="{ 'is-invalid': f.submitted && password.invalid }" required>
+             </mat-form-field>
+             <div align="center">
+               <button type="submit" mat-raised-button style="margin-bottom: 20px;" color="primary">LOGIN</button>
+             </div>
+          </form>
+       </mat-card-content>
+       <div align="center" style="margin-bottom: 10px;"  >
+         <a routerLink="/register" style="color: red;
+         text-decoration: none;
+         ">Not Register Yet ?</a>
+       </div>
+       
+    </mat-card>
+ </div>

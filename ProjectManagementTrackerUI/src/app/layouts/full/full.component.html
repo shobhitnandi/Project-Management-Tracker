@@ -1,0 +1,47 @@
+
+<div class="main-container"> 
+    <mat-toolbar color="primary" class="topbar telative">
+        <div class="navbar-header">
+            <a class="navbar-brand" routerLink="">
+                <span fxShow="false" fxShow.gt-xs>
+                    <p style=" font-size: x-large;
+                    color: white;
+                    margin-left: 20%;">PMT</p>
+                </span> 
+            </a>
+        </div>
+        <button mat-icon-button (click)="snav.toggle()" value="sidebarclosed">
+            <mat-icon style="font-size: 35px;">menu</mat-icon>
+        </button>
+        <span class="hname" fxFlex style="font-size: x-large;
+        flex: 1 1 0%;
+        box-sizing: border-box;
+        margin-left: 20%;">Project Management Tracker</span>
+        <mat-form-field class="langfield" style="width: 10%;vertical-align: -webkit-baseline-middle;margin-right: 30px;">
+            <mat-label style="font-size: medium;">{{language}}</mat-label>
+            <mat-select>
+              <mat-option (click)="selectLanguage('EN')" style="font-size: medium;">
+                English (EN)
+              </mat-option>
+              <mat-option (click)="selectLanguage('DE')" style="font-size: medium;"> 
+                German (DE)
+              </mat-option>
+              <mat-option (click)="selectLanguage('CH')" style="font-size: medium;">
+                Chinese (CH)
+              </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <app-header></app-header>
+        <img (click)="logout()" style="margin-left: 10px;" src="../../../assets/images/power_settings_new_white_36x36.png"/>
+    </mat-toolbar>
+    <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 0 : 0">
+        <mat-sidenav #snav id="snav" class="dark-sidebar pl-xs" [mode]="mobileQuery.matches ? 'side' : 'over'" fixedTopGap="0" [opened]="mobileQuery.matches" [disableClose]="mobileQuery.matches">
+            <app-sidebar></app-sidebar>
+        </mat-sidenav>
+        <mat-sidenav-content class="page-wrapper">
+        <div class="page-content">  
+            <router-outlet><app-spinner></app-spinner></router-outlet>
+        </div>    
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>

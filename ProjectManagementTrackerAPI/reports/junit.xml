@@ -1,0 +1,42 @@
+<testsuite name="Django Project Tests" errors="1" failures="0" skips="0" tests="43" time="0.766"><testcase time="0.080783" classname="assignproject.tests.test_views.TestViews" name="test_assign_project_DELETE" /><testcase time="0.025930" classname="assignproject.tests.test_views.TestViews" name="test_assign_project_DELETE_ID_Exist" /><testcase time="0.009242" classname="assignproject.tests.test_views.TestViews" name="test_assign_project_DELETE_ID_Not_Exist" /><testcase time="0.004986" classname="assignproject.tests.test_views.TestViews" name="test_assign_project_GET" /><testcase time="0.049866" classname="assignproject.tests.test_views.TestViews" name="test_assign_project_GET_ID_Not_Exist" /><testcase time="0.021975" classname="assignproject.tests.test_views.TestViews" name="test_assign_project_POST" /><testcase time="0.240423" classname="assignproject.tests.test_views.TestViews" name="test_assign_project_PUT_ID_Exist"><error type="rest_framework.exceptions.ParseError" message="JSON parse error - Expecting value: line 1 column 1 (char 0)">Traceback (most recent call last):
+  File "C:\Users\SN075663\AppData\Local\Programs\Python\Python38-32\lib\site-packages\rest_framework\parsers.py", line 65, in parse
+    return json.load(decoded_stream, parse_constant=parse_constant)
+  File "C:\Users\SN075663\AppData\Local\Programs\Python\Python38-32\lib\site-packages\rest_framework\utils\json.py", line 31, in load
+    return json.load(*args, **kwargs)
+  File "C:\Users\SN075663\AppData\Local\Programs\Python\Python38-32\lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "C:\Users\SN075663\AppData\Local\Programs\Python\Python38-32\lib\json\__init__.py", line 370, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\SN075663\AppData\Local\Programs\Python\Python38-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\SN075663\AppData\Local\Programs\Python\Python38-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\SN075663\OneDrive - Cerner Corporation\Desktop\Dev Center Project\ProjectManagementTrackerAPI\assignproject\tests\test_views.py", line 140, in test_assign_project_PUT_ID_Exist
+    response = self.client.put(reverse('assignproject_details', kwargs={'pk': assign_project.id}),
+  File "C:\Users\SN075663\AppData\Local\Programs\Python\Python38-32\lib\site-packages\django\test\client.py", line 549, in put
+    response = super().put(path, data=data, content_type=content_type, secure=secure, **extra)
+  File "C:\Users\SN075663\AppData\Local\Programs\Python\Python38-32\lib\site-packages\django\test\client.py", line 380, in put
+    return self.generic('PUT', path, data, content_type,
+  File "C:\Users\SN075663\AppData\Local\Programs\Python\Python38-32\lib\site-packages\django\test\client.py", line 421, in generic
+    return self.request(**r)
+  File "C:\Users\SN075663\AppData\Local\Programs\Python\Python38-32\lib\site-packages\django\test\client.py", line 496, in request
+    raise exc_value
+  File "C:\Users\SN075663\AppData\Local\Programs\Python\Python38-32\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\SN075663\AppData\Local\Programs\Python\Python38-32\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\SN075663\AppData\Local\Programs\Python\Python38-32\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\SN075663\AppData\Local\Programs\Python\Python38-32\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\SN075663\OneDrive - Cerner Corporation\Desktop\Dev Center Project\ProjectManagementTrackerAPI\assignproject\views.py", line 48, in assignproject_detail
+    assignproject_data = JSONParser().parse(request)
+  File "C:\Users\SN075663\AppData\Local\Programs\Python\Python38-32\lib\site-packages\rest_framework\parsers.py", line 67, in parse
+    raise ParseError('JSON parse error - %s' % str(exc))
+rest_framework.exceptions.ParseError: JSON parse error - Expecting value: line 1 column 1 (char 0)
+</error></testcase><testcase time="0.003988" classname="assignproject.tests.test_views.TestViews" name="test_assign_project_PUT_ID_Not_Exist" /><testcase time="0.003988" classname="employee.tests.test_views.TestViews" name="test_employee_DELETE" /><testcase time="0.011967" classname="employee.tests.test_views.TestViews" name="test_employee_DELETE_ID_Exist" /><testcase time="0.003302" classname="employee.tests.test_views.TestViews" name="test_employee_DELETE_ID_Not_Exist" /><testcase time="0.003912" classname="employee.tests.test_views.TestViews" name="test_employee_GET" /><testcase time="0.008976" classname="employee.tests.test_views.TestViews" name="test_employee_GET_ID_Exist" /><testcase time="0.002991" classname="employee.tests.test_views.TestViews" name="test_employee_GET_ID_Not_Exist" /><testcase time="0.018949" classname="employee.tests.test_views.TestViews" name="test_employee_POST" /><testcase time="0.015956" classname="employee.tests.test_views.TestViews" name="test_employee_PUT_ID_Exist" /><testcase time="0.005046" classname="employee.tests.test_views.TestViews" name="test_employee_PUT_ID_Not_Exist" /><testcase time="0.003989" classname="manager.tests.test_views.TestViews" name="test_manager_DELETE" /><testcase time="0.013963" classname="manager.tests.test_views.TestViews" name="test_manager_DELETE_ID_Exist" /><testcase time="0.005023" classname="manager.tests.test_views.TestViews" name="test_manager_DELETE_ID_Not_Exist" /><testcase time="0.005987" classname="manager.tests.test_views.TestViews" name="test_manager_GET" /><testcase time="0.008976" classname="manager.tests.test_views.TestViews" name="test_manager_GET_ID_Exist" /><testcase time="0.004972" classname="manager.tests.test_views.TestViews" name="test_manager_GET_ID_Not_Exist" /><testcase time="0.007843" classname="manager.tests.test_views.TestViews" name="test_manager_POST" /><testcase time="0.014101" classname="manager.tests.test_views.TestViews" name="test_manager_PUT_ID_Exist" /><testcase time="0.003988" classname="manager.tests.test_views.TestViews" name="test_manager_PUT_ID_Not_Exist" /><testcase time="0.013963" classname="projects.tests.test_views.TestViews" name="test_manager_PUT_ID_Exist" /><testcase time="0.007975" classname="projects.tests.test_views.TestViews" name="test_manager_PUT_ID_Not_Exist" /><testcase time="0.003957" classname="projects.tests.test_views.TestViews" name="test_project_DELETE" /><testcase time="0.012996" classname="projects.tests.test_views.TestViews" name="test_project_DELETE_ID_Exist" /><testcase time="0.005983" classname="projects.tests.test_views.TestViews" name="test_project_DELETE_ID_Not_Exist" /><testcase time="0.005977" classname="projects.tests.test_views.TestViews" name="test_project_GET" /><testcase time="0.009973" classname="projects.tests.test_views.TestViews" name="test_project_GET_ID_Exist" /><testcase time="0.002873" classname="projects.tests.test_views.TestViews" name="test_project_GET_ID_Not_Exist" /><testcase time="0.005986" classname="projects.tests.test_views.TestViews" name="test_project_POST" /><testcase time="0.000000" classname="assignproject.tests.test_urls.TestUrls" name="test_assignproject_detail_url" /><testcase time="0.000997" classname="assignproject.tests.test_urls.TestUrls" name="test_assignproject_list_url" /><testcase time="0.000000" classname="employee.tests.test_urls.TestUrls" name="test_employee_detail_url" /><testcase time="0.000808" classname="employee.tests.test_urls.TestUrls" name="test_employee_list_url" /><testcase time="0.000000" classname="manager.tests.test_urls.TestUrls" name="test_manager_detail_url" /><testcase time="0.000000" classname="manager.tests.test_urls.TestUrls" name="test_manager_list_url" /><testcase time="0.000000" classname="projects.tests.test_urls.TestUrls" name="test_project_detail_url" /><testcase time="0.000998" classname="projects.tests.test_urls.TestUrls" name="test_project_list_url" /></testsuite>

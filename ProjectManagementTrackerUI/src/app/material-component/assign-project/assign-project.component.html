@@ -1,0 +1,78 @@
+<h4>{{labels.assignProjectEmployee}}</h4>
+<div class="example-container">
+  <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+    <mat-grid-list cols="2" rowHeight="3:1" [gutterSize]="'20px'">
+      <mat-grid-tile>
+        <mat-form-field>
+          <mat-label>{{labels.selectEmployee}}</mat-label>
+          <mat-select placeholder="{{labels.selectEmployee}}" type="text" name="employeeid" [(ngModel)]="local_data.employeeid"
+            #employeeid="ngModel" [ngClass]="{ 'is-invalid': f.submitted && employeeid.invalid }" required>
+            <mat-option *ngFor="let employee of employees" [value]="employee.id">
+              {{employee.employeename}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-form-field>
+          <mat-label>{{labels.selectProject}}</mat-label>
+          <mat-select placeholder="{{labels.selectProject}}" type="text" name="projectid" [(ngModel)]="local_data.projectid"
+            #projectid="ngModel" [ngClass]="{ 'is-invalid': f.submitted && projectid.invalid }" required>
+            <mat-option *ngFor="let project of projects" [value]="project.id">
+              {{project.projectname}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-form-field>
+          <input matInput data-date-format='YYYY-MM-DD' [matDatepicker]="startdate" placeholder="{{labels.startDate}}"
+            name="startdate" [(ngModel)]="local_data.startdate" #startdate="ngModel"
+            [ngClass]="{ 'is-invalid': f.submitted && startdate.invalid }" required>
+          <mat-datepicker-toggle matSuffix [for]="startdate"></mat-datepicker-toggle>
+          <mat-datepicker #startdate></mat-datepicker>
+        </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-form-field>
+          <input matInput [matDatepicker]="enddate" placeholder="{{labels.endDate}}" name="enddate" [(ngModel)]="local_data.enddate"
+            #enddate="ngModel" [ngClass]="{ 'is-invalid': f.submitted && enddate.invalid }" required>
+          <mat-datepicker-toggle matSuffix [for]="enddate"></mat-datepicker-toggle>
+          <mat-datepicker #enddate></mat-datepicker>
+        </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-form-field>
+          <div class="form-group">
+            <input matInput placeholder="{{labels.completionTime}}" type="number" min="1" name="completiontime"
+              [(ngModel)]="local_data.completiontime" #completiontime="ngModel"
+              [ngClass]="{ 'is-invalid': f.submitted && completiontime.invalid }" required>
+          </div>
+        </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-form-field>
+          <mat-label>{{labels.taskstatus}}</mat-label>
+          <mat-select placeholder="{{labels.taskstatus}}" type="text" name="taskstatus" [(ngModel)]="local_data.taskstatus"
+            #taskstatus="ngModel" [ngClass]="{ 'is-invalid': f.submitted && taskstatus.invalid }" required>
+            <mat-option *ngFor="let item of status" [value]="item.statusname">
+              {{item.statusname}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </mat-grid-tile>  
+      <mat-grid-tile colspan="2">
+        <mat-form-field class="example-full-width">
+          <textarea matInput placeholder="{{labels.comment}}" name="comment"
+          [(ngModel)]="local_data.comment" #comment="ngModel"
+          [ngClass]="{ 'is-invalid': f.submitted && comment.invalid }" required></textarea>
+        </mat-form-field>
+      </mat-grid-tile>
+    </mat-grid-list>
+    <div class="form-group" style="text-align: center;">
+      <button mat-raised-button color="warn" type="reset" (click)="onClose()"
+        style="margin-right: 20px;">{{labels.cancel}}</button>
+      <button type="submit" mat-raised-button color="primary" cdkFocusInitial>{{action}}</button>
+    </div>
+  </form>
+</div>

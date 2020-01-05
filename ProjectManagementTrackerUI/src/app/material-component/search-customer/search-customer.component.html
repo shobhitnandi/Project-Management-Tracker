@@ -1,0 +1,14 @@
+<h3>Find By Age</h3>
+<div style="width: 300px;">
+      <div class="form-group">
+            <label for="lastname">Age</label>
+            <input type="text" class="form-control" id="age" required [(ngModel)]="age" name="age">
+      </div>
+      <br>
+      <div class="btn-group">
+            <button mat-raised-button color="primary" (click)="onSubmit()">Submit</button>
+      </div>
+</div>
+<ul>
+      <li *ngFor='let item of customerData'>{{ item.name }}</li>
+</ul>

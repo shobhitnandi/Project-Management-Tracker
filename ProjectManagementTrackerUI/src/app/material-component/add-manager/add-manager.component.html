@@ -1,0 +1,29 @@
+<h4>{{action}} {{labels.managerInformation}}</h4>
+<div class="example-container">
+  <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+    <mat-form-field>
+      <div class="form-group">
+        <input matInput placeholder="{{labels.managerName}}" type="text" name="managername" [(ngModel)]="local_data.managername"
+          #managername="ngModel" [ngClass]="{ 'is-invalid': f.submitted && managername.invalid }" required>
+      </div>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="{{labels.designation}}" type="text" name="designation" [(ngModel)]="local_data.designation"
+        #designation="ngModel" [ngClass]="{ 'is-invalid': f.submitted && designation.invalid }" required>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="{{labels.contactNo}}" type="text" (keypress)="keyPress($event)" minlength=10 maxlength=10
+        name="contactno" [(ngModel)]="local_data.contactno" #contactno="ngModel"
+        [ngClass]="{ 'is-invalid': f.submitted && contactno.invalid }" required>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="{{labels.emailid}}" type="email" email name="emailid" [(ngModel)]="local_data.emailid"
+        #emailid="ngModel" [ngClass]="{ 'is-invalid': f.submitted && emailid.invalid }" required>
+    </mat-form-field>
+    <div class="form-group" style="text-align: center;">
+      <button mat-raised-button color="warn" type="reset" (click)="onClose()"
+        style="margin-right: 20px;">{{labels.cancel}}</button>
+      <button type="submit" mat-raised-button color="primary" cdkFocusInitial>{{action}}</button>
+    </div>
+  </form>
+</div>

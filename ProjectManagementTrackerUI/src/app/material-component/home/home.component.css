@@ -1,0 +1,23 @@
+.example-card {
+    min-width: 250px;
+    max-width: 300px;
+    min-height: 150px;
+    max-height: 150px;
+    float: left;
+}
+
+mat-card-header{
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    align-items:center;
+ }
+ 
+@media only screen and (max-width: 768px) {
+    .example-card {
+        min-width: 80%;
+        float: left;
+    }
+  } 

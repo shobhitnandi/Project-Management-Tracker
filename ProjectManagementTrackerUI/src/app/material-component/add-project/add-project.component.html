@@ -1,0 +1,33 @@
+<h4>{{action}} {{labels.projectInformation}}</h4>
+<div class="example-container">
+  <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+    <mat-form-field>
+      <div class="form-group">
+        <input matInput placeholder="{{labels.projectName}}" type="text" name="projectname" [(ngModel)]="local_data.projectname"
+          #projectname="ngModel" [ngClass]="{ 'is-invalid': f.submitted && projectname.invalid }" required>
+      </div>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput data-date-format='YYYY-MM-DD' [matDatepicker]="startdate" placeholder="{{labels.startDate}}"
+        name="startdate" [(ngModel)]="local_data.startdate" #startdate="ngModel"
+        [ngClass]="{ 'is-invalid': f.submitted && startdate.invalid }" required>
+      <mat-datepicker-toggle matSuffix [for]="startdate"></mat-datepicker-toggle>
+      <mat-datepicker #startdate></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [matDatepicker]="enddate" placeholder="{{labels.endDate}}" name="enddate" [(ngModel)]="local_data.enddate"
+        #enddate="ngModel" [ngClass]="{ 'is-invalid': f.submitted && enddate.invalid }" required>
+      <mat-datepicker-toggle matSuffix [for]="enddate"></mat-datepicker-toggle>
+      <mat-datepicker #enddate></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="{{labels.clientName}}" type="text" name="clientname" [(ngModel)]="local_data.clientname"
+        #clientname="ngModel" [ngClass]="{ 'is-invalid': f.submitted && clientname.invalid }" required>
+    </mat-form-field>
+    <div class="form-group" style="text-align: center;">
+      <button mat-raised-button color="warn" type="reset" (click)="onClose()"
+        style="margin-right: 20px;">{{labels.cancel}}</button>
+      <button type="submit" mat-raised-button color="primary" cdkFocusInitial>{{action}}</button>
+    </div>
+  </form>
+</div>

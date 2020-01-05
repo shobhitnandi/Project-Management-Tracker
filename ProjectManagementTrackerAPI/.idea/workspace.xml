@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d369e4b6-2c58-47ab-8ae7-8b255f0e22e0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1V3OuooXT7E3GKuBSIFMInEAbq8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignproject" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\SN075663\OneDrive - Cerner Corporation\Desktop\Dev Center Project\ProjectManagementTrackerAPI\assignproject" />
+      <recent name="C:\Users\SN075663\OneDrive - Cerner Corporation\Desktop\Dev Center Project\ProjectManagementTrackerAPI\assignproject\tests" />
+      <recent name="C:\Users\SN075663\OneDrive - Cerner Corporation\Desktop\Dev Center Project\ProjectManagementTrackerAPI\employee" />
+      <recent name="C:\Users\SN075663\OneDrive - Cerner Corporation\Desktop\Dev Center Project\ProjectManagementTrackerAPI\projects" />
+      <recent name="C:\Users\SN075663\OneDrive - Cerner Corporation\Desktop\Dev Center Project\ProjectManagementTrackerAPI\manager" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\SN075663\OneDrive - Cerner Corporation\Desktop\Dev Center Project\ProjectManagementTrackerAPI\ProjectManagementTrackerAPI" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.views">
+    <configuration name="testingfile (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ProjectManagementTrackerAPI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ProjectManagementTrackerAPI" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProjectManagementTrackerAPI/testingfile.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="testingfile" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ProjectManagementTrackerAPI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\SN075663\OneDrive - Cerner Corporation\Desktop\Dev Center Project\ProjectManagementTrackerAPI\ProjectManagementTrackerAPI\testingfile.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ProjectManagementTrackerAPI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/employee" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/employee/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.views" />
+        <item itemvalue="Python.testingfile (1)" />
+        <item itemvalue="Python.testingfile" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d369e4b6-2c58-47ab-8ae7-8b255f0e22e0" name="Default Changelist" comment="" />
+      <created>1576478536928</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576478536928</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="401" y="155" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576957317175">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="401" y="155" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.689@0.0.1280.689" timestamp="1576957317175" />
+    <state width="1259" height="230" key="GridCell.Tab.0.bottom" timestamp="1577625135645">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1259" height="230" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1577625135645" />
+    <state width="1259" height="230" key="GridCell.Tab.0.center" timestamp="1577625135645">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1259" height="230" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1577625135645" />
+    <state width="1259" height="230" key="GridCell.Tab.0.left" timestamp="1577625135645">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1259" height="230" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1577625135645" />
+    <state width="1259" height="230" key="GridCell.Tab.0.right" timestamp="1577625135645">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1259" height="230" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1577625135645" />
+    <state x="144" y="0" key="SettingsEditor" timestamp="1577084083319">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="144" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1577084083319" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1578204979109">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1280.689@0.0.1280.689" timestamp="1578204979109" />
+  </component>
+</project>
