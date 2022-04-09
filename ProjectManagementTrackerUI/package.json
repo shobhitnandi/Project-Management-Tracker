@@ -28,7 +28,7 @@
     "intl": "^1.2.5",
     "jquery": "^3.4.1",
     "karma-phantomjs-launcher": "^1.0.4",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "ngx-cookie-service": "^2.3.0",
     "phantomjs-prebuilt": "^2.1.16",
     "rxjs": "~6.4.0",
